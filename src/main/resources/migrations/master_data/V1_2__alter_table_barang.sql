@@ -1,0 +1,1 @@
+ALTER TABLE schema_master_data.barang ADD kode varchar(255) NULL;

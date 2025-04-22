@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: OmDev
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://10.8.0.1:5432/omdev-flayway}
+    username: ${SPRING_DATASOURCE_USERNAME:admin}
+    password: ${SPRING_DATASOURCE_PASSWORD:admin}
+  flyway:
+    enabled: false
+    baseline-on-migrate: false
+    locations:
+      - classpath:migrations/properties
+    validate-on-migrate: false
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+        default_schema: public

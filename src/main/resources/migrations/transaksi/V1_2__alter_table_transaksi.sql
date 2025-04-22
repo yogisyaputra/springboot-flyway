@@ -1,0 +1,1 @@
+ALTER TABLE schema_transaksi.transaksi ADD kode varchar(255) NULL;

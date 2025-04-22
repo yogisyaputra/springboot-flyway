@@ -1,0 +1,1 @@
+ALTER TABLE public."user" ADD email varchar(255) NULL;
